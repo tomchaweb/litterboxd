@@ -1,0 +1,393 @@
+html{
+    font-size: 10px;
+}
+
+h2 {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #242b34;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #14171C;
+    /* padding-top: 5px;
+    padding-bottom: 2px; */
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+nav > ul > li:hover{
+    cursor: pointer;
+    color: white;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo > h2 {
+    color: white;
+    margin: 0;
+    font-size: 4rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    letter-spacing: -0.1rem;
+}
+
+nav > ul {
+    color: rgb(207, 207, 207);
+    margin: 0;
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-self: flex-end;
+}
+
+h1 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 200;
+    font-size: 3rem;
+    color: rgb(207, 207, 207);
+    text-align: center;
+}
+
+h1 > span {
+    color: white;
+    text-decoration: underline;
+    font-weight: 300;
+}
+
+#new-on-div {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#new-on-div > h2 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.1rem;
+    color: rgb(207, 207, 207);
+    margin-bottom: 0;
+}
+
+.review-cards-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.review-card {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.review-thumb{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(147, 147, 147);
+    border-radius: 5px;
+}
+
+.review-thumb:hover{
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.review-thumb > img {
+    border-radius: 5px 5px 0px 0px;
+}
+
+.review-user {
+    padding: 5px;
+    background-color: #556678;
+    color: rgb(207, 207, 207);
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap:5px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.review-user > img {
+    border-radius: 50%;
+}
+
+.review-user > h3{
+    margin: 0;
+}
+
+.review-rating {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(207, 207, 207);
+}
+
+.review-rating > p{
+    margin: 0;
+}
+
+#popular-on-div {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5%;
+}
+
+#latest-news-div {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5%;
+}
+
+.latest-news-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.latest-news-item > img {
+    justify-self: right;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.latest-news-text {
+    padding: 10px;
+    color: white;
+    background-color: #39434e;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.latest-news-text > h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2.2rem;
+    margin-bottom: 0;
+}
+
+.latest-news-text > p {
+    margin-top: 10px;
+    font-family: "Playfair Display", serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: rgb(200, 200, 200);
+}
+
+.latest-news-text > p > a{
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+}
+
+#popular-reviews-div {
+    margin-left: 20%;
+    margin-right: 20%;   
+    margin-bottom: 5%;
+}
+
+.popular-reviews-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+}
+
+.popular-review-item {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 2fr;
+    border-bottom:1px solid rgb(207, 207, 207);
+}
+
+.popular-review-item > img {
+    border-radius: 2px;
+    border: 1px solid rgb(147, 147, 147);
+    border-radius: 5px;
+}
+
+.review-item-main-body {
+    grid-row: 2;
+    grid-column: span 2;
+    margin-top: 10px;
+    font-family: "Playfair Display", serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: rgb(200, 200, 200);
+}
+
+.popular-review-user {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.popular-review-user > h3 {
+    color: rgb(207, 207, 207);
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+    justify-content: left;
+}
+
+.popular-review-user > img {
+    border-radius: 50%;
+}
+
+.popular-review-header > h2{
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+}
+
+.popular-review-header > h2 > span {
+    color: rgb(207, 207, 207);
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+#popular-lists-div {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#recent-stories-div {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.recent-stories-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.recent-stories-card{
+    background-color: #39434e;
+    border-radius: 3px;
+}
+
+.recent-stories-card > img {
+    width: 100%;
+    border-radius: 3px 3px 0px 0px;
+}
+
+.stories-user {
+    padding: 5px;
+    color: rgb(207, 207, 207);
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap:5px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.stories-user > img{
+    border-radius: 50%;
+}
+
+.stories-user > h3{
+    margin: 0;
+}
+
+.recent-stories-card-text {
+    padding:10px;
+    padding-top: 5px;
+}
+
+.recent-stories-card-text > h2 {
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+}
+
+.recent-stories-card-text > p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgb(200, 200, 200);
+}
+
+.recent-stories-card-text > h3 {
+    color: rgb(235, 235, 235);
+    margin: 0;
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+.section-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-header > a {
+    font-size: 1.3rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.1rem;
+    color: rgb(207, 207, 207);
+    margin-bottom: 0;    
+}
+
+.section-header > a:hover{
+    color: rgb(9, 133, 175);
+    cursor: pointer;
+}
+
+.section-header > h2 {
+    font-size: 1.4rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.1rem;
+    color: rgb(207, 207, 207);
+    margin-bottom: 0;    
+}
+
+.section-header > h2:hover{
+    color: rgb(9, 133, 175);
+    cursor: pointer;
+}
+
+hr {
+    border-color: rgb(207, 207, 207);
+    margin-top: 1px;
+    margin-bottom: 10px;
+}
+
+footer {
+    padding: 5%;
+    padding-top: 2%;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 1.5rem;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.1rem;
+    color: rgb(207, 207, 207);
+    margin-top: 5%;
+    margin-bottom: 0;
+    background-color: #556678;       
+}
+
