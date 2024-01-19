@@ -235,7 +235,7 @@ h1 > span {
 
 .popular-review-user {
     display: flex;
-    gap: 10px;
+    gap: 5px;
     align-items: center;
 }
 
@@ -323,7 +323,7 @@ h1 > span {
 .recent-stories-card-text > p {
     font-family: "Roboto", sans-serif;
     font-size: 1.4rem;
-    font-weight: 500;
+    font-weight: 400;
     color: rgb(200, 200, 200);
 }
 
